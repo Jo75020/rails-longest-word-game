@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div style="text-align: center">
+      <h1>Welcome to the longest word-game !</h1>
+      <p style="font-size: 22px">Here is your result</p>
+      <h3>Your word: <%= @word %></h3>
+      <p>Time Taken to answer: <%= @score[:time] %></p>
+      <p>Translation: <%= @score[:translation] %></p>
+      <p>Your score: <%= @score[:score] %></p>
+      <p>Message: <%= @score[:message] %></p>
+      </div>
+      <h4 style="text-align: center"><%= link_to "Try again", "/game" %></h4>
+    </div>
+  </div>
+</div>
